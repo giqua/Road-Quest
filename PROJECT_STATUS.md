@@ -160,6 +160,34 @@ Road-Quest/
 
 ## 🎯 Prossimi Task Prioritari
 
+### 📚 Guide Dettagliate Disponibili
+
+Sono disponibili due guide complete per procedere con lo sviluppo:
+
+#### **Opzione 1: Completare Fase 0** *(Consigliata per Base Solida)*
+📄 **Documento:** [`docs/OPTION_1_COMPLETE_PHASE_0.md`](docs/OPTION_1_COMPLETE_PHASE_0.md)
+
+**Cosa Include:**
+- ✅ Parsing completo "Flight from the Dark" (~350 paragrafi)
+- ✅ Setup e testing API Claude completo
+- ✅ Prompt engineering con template documentati
+- ✅ Script di validazione content database
+
+**Tempo:** 1-2 giorni | **Output:** Base solida per sviluppo completo
+
+#### **Opzione 2: Prototipo Rapido MVP** *(Consigliata per Quick Win)*
+📄 **Documento:** [`docs/OPTION_2_QUICK_MVP.md`](docs/OPTION_2_QUICK_MVP.md)
+
+**Cosa Include:**
+- ✅ Setup API minimale (30 min)
+- ✅ UI Components completi (HomeScreen + GameScreen)
+- ✅ Game loop funzionante con 3 paragrafi test
+- ✅ Testing end-to-end e metriche
+
+**Tempo:** 4-6 ore | **Output:** Prototipo funzionante per validare UX
+
+---
+
 ### Task Immediati (per completare Fase 0)
 
 1. **Content Database** 🔴 CRITICO
@@ -168,16 +196,22 @@ Road-Quest/
    - Generare `src/data/flight-from-dark.json` completo
    - Validare struttura JSON
 
+   📖 *Guida completa in: [`OPTION_1_COMPLETE_PHASE_0.md`](docs/OPTION_1_COMPLETE_PHASE_0.md)*
+
 2. **API Setup & Testing** 🔴 CRITICO
    - Configurare .env con API key Anthropic
    - Testare chiamata Claude API con prompt base
    - Testare TTS con paragrafo di esempio
    - Misurare latenza end-to-end
 
+   📖 *Guida completa in: [`OPTION_1_COMPLETE_PHASE_0.md`](docs/OPTION_1_COMPLETE_PHASE_0.md)*
+
 3. **Prototipo Prompt Engineering** 🟡 IMPORTANTE
    - Testare 10 esempi azioni vocali
    - Ottimizzare prompt per interpretazione
    - Documentare template in `docs/prompts.md`
+
+   📖 *Guida completa in: [`OPTION_1_COMPLETE_PHASE_0.md`](docs/OPTION_1_COMPLETE_PHASE_0.md)*
 
 ### Task per Fase 1 (dopo Fase 0)
 
@@ -186,10 +220,14 @@ Road-Quest/
    - Creare GameScreen (area narrazione + pulsante parla)
    - Integrare in App.js
 
+   📖 *Guida completa in: [`OPTION_2_QUICK_MVP.md`](docs/OPTION_2_QUICK_MVP.md)*
+
 5. **Core Game Loop** 🔴 CRITICO
    - Implementare flusso: carica paragrafo → TTS → ascolta input → interpreta → naviga
    - Collegare services a UI
    - Test end-to-end con 5-10 paragrafi
+
+   📖 *Guida completa in: [`OPTION_2_QUICK_MVP.md`](docs/OPTION_2_QUICK_MVP.md)*
 
 ---
 
@@ -227,20 +265,37 @@ Road-Quest/
 
 ## 📞 Azioni Suggerite per Proseguire
 
-**Opzione A: Completare Fase 0 (Consigliato)**
+**📖 Consulta le guide dettagliate:**
+
+### **Opzione A: Completare Fase 0** *(Consigliato per Produzione)*
+➡️ **Guida:** [`docs/OPTION_1_COMPLETE_PHASE_0.md`](docs/OPTION_1_COMPLETE_PHASE_0.md)
+
 1. Focus su content database (parsing Lone Wolf)
 2. Setup API e test base
-3. Poi procedere con Fase 1
+3. Prompt engineering e documentazione
+4. Poi procedere con Fase 1
 
-**Opzione B: Prototipo Rapido**
-1. Usare solo storyExample.json (3 paragrafi)
+**Pro:** Base solida, contenuto completo
+**Tempo:** 1-2 giorni
+
+### **Opzione B: Prototipo Rapido** *(Consigliato per Validazione UX)*
+➡️ **Guida:** [`docs/OPTION_2_QUICK_MVP.md`](docs/OPTION_2_QUICK_MVP.md)
+
+1. Setup API minimale (30 min)
 2. Implementare UI e core loop
-3. Validare UX prima di investire su content
+3. Usare solo storyExample.json (3 paragrafi)
+4. Validare UX prima di investire su content
 
-**Opzione C: Parallel Track**
-1. Una persona su content database
-2. Una persona su UI e core loop
+**Pro:** Risultati rapidi, feedback immediato
+**Tempo:** 4-6 ore
+
+### **Opzione C: Parallel Track** *(Se Team > 1 persona)*
+1. **Team A:** Segue Opzione A (content database)
+2. **Team B:** Segue Opzione B (UI e core loop)
 3. Merge quando entrambi pronti
+
+**Pro:** Massima velocità
+**Contro:** Richiede coordinamento
 
 ---
 

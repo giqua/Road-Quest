@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "title": "Flight from the Dark",
+    "author": "Joe Dever",
+    "series": "Lone Wolf",
+    "bookNumber": 1,
+    "totalParagraphs": 350
+  },
+  "paragraphs": [
+    {
+      "id": 1,
+      "type": "narrative",
+      "text": "Ti trovi nel Monastero Kai, quando improvvisamente l'allarme risuona. I Signori delle Tenebre stanno attaccando! Devi fuggire e portare un messaggio urgente al Re.",
+      "choices": [
+        {
+          "action": "Fuggi attraverso la foresta",
+          "targetParagraphId": 142,
+          "condition": null
+        },
+        {
+          "action": "Prendi la strada principale",
+          "targetParagraphId": 87,
+          "condition": null
+        }
+      ],
+      "combat": null,
+      "modifiers": {
+        "endurance": 0,
+        "inventoryAdd": [],
+        "inventoryRemove": []
+      }
+    },
+    {
+      "id": 87,
+      "type": "narrative",
+      "text": "Percorri la strada principale quando scorgi una taverna. Potresti fermarti per riposare o proseguire.",
+      "choices": [
+        {
+          "action": "Entra nella taverna",
+          "targetParagraphId": 142,
+          "condition": null
+        },
+        {
+          "action": "Prosegui lungo la strada",
+          "targetParagraphId": 200,
+          "condition": null
+        }
+      ],
+      "combat": null,
+      "modifiers": {
+        "endurance": 0,
+        "inventoryAdd": [],
+        "inventoryRemove": []
+      }
+    },
+    {
+      "id": 142,
+      "type": "combat",
+      "text": "Un Giakan ti balza addosso! Devi combattere!",
+      "choices": [
+        {
+          "action": "Combatti",
+          "targetParagraphId": 250,
+          "condition": "combat_victory"
+        },
+        {
+          "action": "Fuggi",
+          "targetParagraphId": 180,
+          "condition": null
+        }
+      ],
+      "combat": {
+        "enemyName": "Giakan",
+        "enemyCombatSkill": 13,
+        "enemyEndurance": 10
+      },
+      "modifiers": {
+        "endurance": 0,
+        "inventoryAdd": [],
+        "inventoryRemove": []
+      }
+    },
+    {
+      "id": 200,
+      "type": "item",
+      "text": "Trovi una spada abbandonata sul ciglio della strada. Potresti prenderla.",
+      "choices": [
+        {
+          "action": "Prendi la spada",
+          "targetParagraphId": 300,
+          "condition": "inventory_space"
+        },
+        {
+          "action": "Lasciala dove sta",
+          "targetParagraphId": 300,
+          "condition": null
+        }
+      ],
+      "combat": null,
+      "modifiers": {
+        "endurance": 0,
+        "inventoryAdd": ["Spada"],
+        "inventoryRemove": []
+      }
+    }
+  ]
+}

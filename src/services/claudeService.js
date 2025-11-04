@@ -1,9 +1,10 @@
 import Anthropic from '@anthropic-ai/sdk';
+import { ANTHROPIC_API_KEY } from '@env';
 
 // Initialize Anthropic client
-// Note: API key should be loaded from environment variables
+// Note: API key is loaded from .env file via react-native-dotenv
 const anthropic = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY || 'your-api-key-here',
+  apiKey: ANTHROPIC_API_KEY || 'your-api-key-here',
 });
 
 /**

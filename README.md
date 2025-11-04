@@ -113,7 +113,7 @@ Creare un'esperienza di gioco **hands-free** e **eyes-free** perfetta per:
 
 ```bash
 # Clone repository
-git clone https://github.com/your-username/Road-Quest.git
+git clone https://github.com/giqua/Road-Quest.git
 cd Road-Quest
 
 # Installa dipendenze
@@ -264,9 +264,9 @@ I contenuti della serie Lone Wolf sono utilizzati con permesso di [Project Aon](
 
 ## 📞 Contatti
 
-- **Repository**: [github.com/your-username/Road-Quest](https://github.com/your-username/Road-Quest)
-- **Issues**: [github.com/your-username/Road-Quest/issues](https://github.com/your-username/Road-Quest/issues)
-- **Discussions**: [github.com/your-username/Road-Quest/discussions](https://github.com/your-username/Road-Quest/discussions)
+- **Repository**: [github.com/giqua/Road-Quest](https://github.com/giqua/Road-Quest)
+- **Issues**: [github.com/giqua/Road-Quest/issues](https://github.com/giqua/Road-Quest/issues)
+- **Discussions**: [github.com/giqua/Road-Quest/discussions](https://github.com/giqua/Road-Quest/discussions)
 
 ---
 
